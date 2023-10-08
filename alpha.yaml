@@ -40,6 +40,18 @@ spec:
               - op: replace
                 path: /metadata/labels/gwcp.guidewire.com~1tenant-name
                 value: quadrant-shared
+              - op: replace
+                path: /metadata/labels/gwcp.guidewire.com~1version
+                value: '6.5.1'
+              - op: replace
+                path: /metadata/labels/gwcp.guidewire.com~1created-by
+                value: pod-avondale
+              - op: replace
+                path: /metadata/labels/gwcp.guidewire.com~1maintained-by
+                value: pod-avondale
+              - op: replace
+                path: /metadata/labels/gwcp.guidewire.com~1dept
+                value: '275'
             target:
               name: .*
               kind: .*
