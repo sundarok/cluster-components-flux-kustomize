@@ -41,4 +41,5 @@ spec:
     - name: alpha
     - name: bravo
   values:
-    replicaCount: 2
+    h2c:
+      enabled: true
