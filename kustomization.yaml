@@ -3,3 +3,7 @@ kind: Kustomization
 resources:
 - alpha.yaml
 - bravo.yaml
+
+labels:
+  - pairs:
+      atmos.guidewire.com/cluster-component: "true"
