@@ -1,7 +1,19 @@
-apiVersion: apps/v1
-kind: Deployment
+#apiVersion: apps/v1
+#kind: Deployment
+#metadata:
+#  labels:
+#    additional-label-1: value1
+#    additional-label-2: value2
+#  name: .*
+
+apiVersion: builtin
+kind: LabelTransformer
 metadata:
-  labels:
-    additional-label-1: value1
-    additional-label-2: value2
-  name: .*
+  name: add-or-modify-labels
+labels:
+  - key: new-label-1
+    value: value12
+  - key: new-label-2
+    value: value22
+target:
+  kind: Deployment
