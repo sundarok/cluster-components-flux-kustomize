@@ -8,9 +8,9 @@ labels:
   - pairs:
       atmos.guidewire.com/cluster-component: "true"
 
-spec:
-  commonMetadata:
-    additional-label-1: value1
-    additional-label-2: value2
+#spec:
+#  commonMetadata:
+#    additional-label-1: value1
+#    additional-label-2: value2
 #patchesStrategicMerge:
 #  - label-patch.yaml
