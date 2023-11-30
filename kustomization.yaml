@@ -4,10 +4,15 @@ resources:
   - alpha.yaml
   - bravo.yaml
 
-labels:
-  - pairs:
-      atmos.guidewire.com/cluster-component: "true"
+#labels:
+#  - pairs:
+#      atmos.guidewire.com/cluster-component: "true"
 
+generatorOptions:
+  # labels to add to all generated resources
+  labels:
+    additional-label-1: value1
+    additional-label-2: value2
 #spec:
 #  commonMetadata:
 #    additional-label-1: value1
