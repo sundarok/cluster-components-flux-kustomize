@@ -7,3 +7,7 @@ resources:
 labels:
   - pairs:
       atmos.guidewire.com/cluster-component: "true"
+
+commonLabels:
+  atmos-cluster: something
+  gwcp.guidewire.com/code: '2001'
