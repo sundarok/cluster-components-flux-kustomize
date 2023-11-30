@@ -8,6 +8,11 @@ resources:
 #  - pairs:
 #      atmos.guidewire.com/cluster-component: "true"
 
+commonLabels:
+  someName: someValue
+  owner: alice
+  app: bingo
+
 generatorOptions:
   # labels to add to all generated resources
   labels:
