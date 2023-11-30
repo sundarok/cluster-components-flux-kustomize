@@ -1,0 +1,6 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    additional-label-1: value1
+    additional-label-2: value2

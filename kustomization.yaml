@@ -1,13 +1,12 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-- alpha.yaml
-- bravo.yaml
+  - alpha.yaml
+  - bravo.yaml
 
 labels:
   - pairs:
       atmos.guidewire.com/cluster-component: "true"
 
-commonLabels:
-  atmos-cluster: something
-  gwcp.guidewire.com/code: '2001'
+patchesStrategicMerge:
+  - label-patch.yaml
