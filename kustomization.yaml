@@ -8,5 +8,5 @@ labels:
   - pairs:
       atmos.guidewire.com/cluster-component: "true"
 
-patchesStrategicMerge:
-  - label-patch.yaml
+#patchesStrategicMerge:
+#  - label-patch.yaml
