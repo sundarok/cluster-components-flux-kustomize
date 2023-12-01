@@ -40,11 +40,10 @@ spec:
   values:
     h2c:
       enabled: true
-  Kustomize:
-    patchesStrategicMerge:
-      - label-patch.yaml
   postRenderers:
     - kustomize:
+        patchesStrategicMerge:
+          - label-patch.yaml
         # This doesn't work, `labels` isn't yet supported
         # labels:
         #   - pairs:
