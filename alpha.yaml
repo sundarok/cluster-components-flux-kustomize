@@ -42,13 +42,21 @@ spec:
       enabled: true
   postRenderers:
     - kustomize:
+#        patchesStrategicMerge:
+#          - label-patch.yaml
         # This doesn't work, `labels` isn't yet supported
         # labels:
         #   - pairs:
         #       gwcp.guidewire.com/app-name: alpha
         #       gwcp.guidewire.com/tenant-name: quadrant-shared
         patches:
-          - path: add-label.patch.yaml
+          - path: add-label-patch.yaml
+#            target:
+#              kind: .*
+#              name: .*
+#            options:
+#              allowNameChange: true
+#              allowKindChange: true
           - patch: |-
               - op: replace
                 path: /metadata/labels/gwcp.guidewire.com~1app-name
