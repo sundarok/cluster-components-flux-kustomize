@@ -42,6 +42,10 @@ spec:
       enabled: true
   postRenderers:
     - kustomize:
+        commonLabels:
+          someName: someValue
+          owner: alice
+          app: bingo
         # This doesn't work, `labels` isn't yet supported
         # labels:
         #   - pairs:
