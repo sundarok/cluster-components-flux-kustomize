@@ -30,8 +30,8 @@ resources:
 #    additional-label-1: value1
 #    additional-label-2: value2
 
-transformers:
-  - label-patch.yaml
+#transformers:
+#  - label-patch.yaml
 
 #spec:
 #  commonMetadata:
