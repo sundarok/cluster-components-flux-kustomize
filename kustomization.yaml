@@ -42,12 +42,10 @@ resources:
 patches:
   - path: label-patch.json
     target:
-      kind: .*
-      name: .*
+      kind: Deployment
   - patch: |
       - op: replace
         path: /metadata/labels/myowner
         value: "my-pods"
     target:
-      name: .*
-      kind: .*
+      kind: Deployment
