@@ -11,9 +11,14 @@ kind: LabelTransformer
 metadata:
   name: add-or-modify-labels
 labels:
-  - key: new-label-1
-    value: value12
-  - key: new-label-2
-    value: value22
-target:
-  kind: Deployment
+  "new-label-1": "value12"
+  "new-label-2": "value122"
+fieldSpecs:
+  - path: metadata/labels
+    create: true
+#fieldSpecs:
+#  - path: metadata/labels
+#    create: true
+#  - kind: Deployment
+#    path: spec/template/metadata/labels
+#    create: true

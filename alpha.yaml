@@ -52,14 +52,14 @@ spec:
         #   - pairs:
         #       gwcp.guidewire.com/app-name: alpha
         #       gwcp.guidewire.com/tenant-name: quadrant-shared
-        patches:
-          - path: add-label-patch.yaml
-            target:
-              kind: .*
-              name: .*
-            options:
-              allowNameChange: true
-              allowKindChange: true
+#        patches:
+#          - path: add-label-patch.yaml
+#            target:
+#              kind: .*
+#              name: .*
+#            options:
+#              allowNameChange: true
+#              allowKindChange: true
 #          - patch:
 #              path: label-patch.json
 #              target:

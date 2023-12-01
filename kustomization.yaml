@@ -24,14 +24,14 @@ resources:
 #  - pairs:
 #      atmos.guidewire.com/cluster-component: "true"
 
-generatorOptions:
-  # labels to add to all generated resources
-  labels:
-    additional-label-1: value1
-    additional-label-2: value2
+#generatorOptions:
+#  # labels to add to all generated resources
+#  labels:
+#    additional-label-1: value1
+#    additional-label-2: value2
 
-#transformers:
-#  - label-patch.yaml
+transformers:
+  - label-patch.yaml
 
 #spec:
 #  commonMetadata:
