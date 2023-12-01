@@ -60,6 +60,11 @@ spec:
 #            options:
 #              allowNameChange: true
 #              allowKindChange: true
+          - patch:
+              path: label-patch.json
+              target:
+                name: .*
+                kind: .*
           - patch: |-
               - op: replace
                 path: /metadata/labels/gwcp.guidewire.com~1app-name
