@@ -39,3 +39,8 @@ resources:
 #    additional-label-2: value2
 #patchesStrategicMerge:
 #  - label-patch.yaml
+patches:
+  - patch: label-patch.json
+    target:
+      kind: .*
+      name: .*
