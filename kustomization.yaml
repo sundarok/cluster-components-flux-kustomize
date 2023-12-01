@@ -40,7 +40,7 @@ resources:
 #patchesStrategicMerge:
 #  - label-patch.yaml
 patches:
-  - patch: label-patch.json
+  - path: label-patch.json
     target:
       kind: .*
       name: .*
