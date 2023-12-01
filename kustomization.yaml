@@ -44,3 +44,10 @@ patches:
     target:
       kind: .*
       name: .*
+  - patch: |
+      - op: replace
+        path: /metadata/labels/myowner
+        value: "my-pods"
+    target:
+      name: .*
+      kind: .*
