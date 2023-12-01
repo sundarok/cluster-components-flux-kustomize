@@ -53,18 +53,18 @@ spec:
         #       gwcp.guidewire.com/app-name: alpha
         #       gwcp.guidewire.com/tenant-name: quadrant-shared
         patches:
-#          - path: add-label-patch.yaml
-#            target:
-#              kind: .*
-#              name: .*
-#            options:
-#              allowNameChange: true
-#              allowKindChange: true
-          - patch:
-              path: label-patch.json
-              target:
-                name: .*
-                kind: .*
+          - path: add-label-patch.yaml
+            target:
+              kind: .*
+              name: .*
+            options:
+              allowNameChange: true
+              allowKindChange: true
+#          - patch:
+#              path: label-patch.json
+#              target:
+#                name: .*
+#                kind: .*
           - patch: |-
               - op: replace
                 path: /metadata/labels/gwcp.guidewire.com~1app-name
