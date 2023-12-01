@@ -41,7 +41,7 @@ spec:
     h2c:
       enabled: true
     labels:
-      app: my-app100
+      apps: my-app100
       updated-label: updated-value
   postRenderers:
     - kustomize:
