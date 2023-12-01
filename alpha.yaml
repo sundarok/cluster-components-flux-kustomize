@@ -40,6 +40,9 @@ spec:
   values:
     h2c:
       enabled: true
+    labels:
+      app: my-app100
+      updated-label: updated-value
   postRenderers:
     - kustomize:
 #        patchesStrategicMerge:
